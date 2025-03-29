@@ -1,12 +1,14 @@
-from image_handler import image_handler
+import sys
 import os
+
+from image_handler import image_handler
 
 terminal_size = os.get_terminal_size()
 
 rows = terminal_size.lines
 cols = terminal_size.columns
 
-img = image_handler("3VJmL.jpg")
+img = image_handler(sys.argv[1])
 
 img_rows_to_cols_ratio = img.height / img.length
 img.convert_monochrome()
