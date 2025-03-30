@@ -3,3 +3,4 @@
 
 # instructions
 ```$ python3 main.py <path/to/image.imgfile>```
+ - might need numpy
